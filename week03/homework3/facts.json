@@ -1,0 +1,55 @@
+{
+ "text": "37 is a factor of all 3-digit base 10 repdigits, such as 111.",
+ "number": 37,
+ "found": true,
+ "type": "math"
+}{
+ "text": "37 is a factor of all 3-digit base 10 repdigits, such as 111.",
+ "number": 37,
+ "found": true,
+ "type": "math"
+}{
+ "text": "3 is the fifth Fibonacci number and the third that is unique.",
+ "number": 3,
+ "found": true,
+ "type": "math"
+}{
+ "text": "444 is an unremarkable number.",
+ "number": 444,
+ "found": false,
+ "type": "trivia"
+}{
+ "text": "December 11th is the day in 1946 that the United Nations International Children's Emergency Fund (UNICEF) is established.",
+ "year": 1946,
+ "number": 346,
+ "found": true,
+ "type": "date"
+}{
+ "date": "January 15",
+ "text": "1991 is the year that the United Nations deadline for the withdrawal of Iraqi forces from occupied Kuwait expires, preparing the way for the start of Operation Desert Storm on January 15th.",
+ "number": 1991,
+ "found": true,
+ "type": "year"
+}{
+ "text": "3 is the number of spatial dimensions we live in.",
+ "number": 3,
+ "found": true,
+ "type": "math"
+}{
+ "text": "37 is the normal human body temperature in degrees Celsius.",
+ "number": 37,
+ "found": true,
+ "type": "trivia"
+}{
+ "text": "December 11th is the day in 1964 that Che Guevara speaks at the United Nations General Assembly in New York City.",
+ "year": 1964,
+ "number": 346,
+ "found": true,
+ "type": "date"
+}{
+ "date": "January 26",
+ "text": "1991 is the year that Siad Barre is overthrown on January 26th.",
+ "number": 1991,
+ "found": true,
+ "type": "year"
+}
