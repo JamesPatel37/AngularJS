@@ -1,0 +1,39 @@
+<div class="search-header" ng-controller='SearchController'>
+  <div class="container">
+
+    <!-- <div class="row"> -->
+    <!-- <div class="col-md-4"> -->
+
+    <form>
+      <br/>
+      <a href=""><u> Search for shows </u></a> || <a href=""><u> Schedules </u></a> || <a href=""><u> Favorites </u></a>
+      <br/><br/>
+      <p class="lead">Search for you favorite TV Shows</p>
+
+      <div class="input-group">
+        <input type="text" ng-model="name" class="form-control input-md"/>
+        <span class="input-group-btn">
+          <button
+          type="submit"
+          class="btn btn-md btn-warning pull-right" ng-click="search()">
+          search
+        </button>
+      </span>
+    </div>
+
+    <p ng-show="shows.length === 0">
+      <i> * no results found</i>
+    </form>
+  </p>
+  <div ng-if="shows.length" class="more-results-block">
+
+  </div>
+
+  <div  ng-repeat= "show in shows">
+    <div show-preview class="directive"> </div>
+  </div>
+
+  <!-- </div> -->
+  <!-- </div> -->
+</div>
+</div>

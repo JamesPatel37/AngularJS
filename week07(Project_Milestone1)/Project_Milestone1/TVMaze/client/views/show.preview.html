@@ -1,0 +1,29 @@
+<div ng-if="shows.length" class ="jumbotron text-left" >
+  <div>
+
+    <p>
+
+      <table>
+        <tr>
+          <td>
+            <img src='{{show.show.image.medium}}'>
+          </td>
+          <td>
+            <table>
+              <tr>
+                <td>
+                  <div ng-bind-html = 'show.show.summary'></div>
+                </td>
+              </tr>
+              <tr>
+                <h3>{{show.show.name}}</h3>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+    </p>
+
+  </div>
+</div>
