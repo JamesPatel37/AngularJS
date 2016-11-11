@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CS 454 - ngAnimate Demo</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+	<!-- Animate.css -  https://daneden.github.io/animate.css/ -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css" />
+	<link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body ng-app="myApp">
+
+	<div class="container" ng-controller="MainCtrl" ng-mousemove="mouseMoved($event);">
+		<div class="row">
+			<div class="col-sm-offset-3 col-sm-6">
+				<div class="page-header">
+				  <h1>Chat <small>A <code>Socket.IO</code> Example</small></h1>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-offset-3 col-sm-6 chat-window half light">
+				<div class="content">
+					<p ng-repeat="message in messages track by $index">
+						{{message}}
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row chat-form">
+			<form ng-submit="sendMessage(newMessage);">
+				<div class="col-sm-offset-3 col-sm-5">
+					<input ng-model="newMessage" class="form-control" type="text" placeholder="Enter a message" />
+				</div>
+				<div class="col-sm-1">
+					<input type="submit" class="btn btn-success" value="Send" />
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-animate.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="scripts/app.js"></script>
+</body>
+</html>

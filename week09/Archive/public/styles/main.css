@@ -1,0 +1,28 @@
+
+
+.chat-window {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  padding: 0 2em;  
+  overflow: scroll;
+}
+.dark{ background-color: #0074D9; color: #fff;}
+.dark small{color: #B3DBFF;}
+.light{ background-color: #7FDBFF; color: #004966;}
+.light small { color: #fff;}
+.full { height: 100vh; }
+.half { height: 50vh; }
+.quarter { height: 25vh; }
+
+.chat-window > .content {
+  position: relative;
+  top: 50%;  
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.chat-form{
+	margin-top: 20px;
+}
