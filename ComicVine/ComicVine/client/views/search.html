@@ -1,0 +1,47 @@
+<div class="search-header">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-4">
+
+        <form>
+          <h2 class="v-center">search</h2>
+          <p class="lead">/// find a superhero or villian by name</p>
+
+          <div class="input-group">
+            <input type="text" class="form-control input-md" ng-model="name" />
+            <span class="input-group-btn">
+            	<button
+            		type="submit"
+            		class="btn btn-md btn-warning pull-right"
+                ng-click="search()">
+            		search
+            	</button>
+            </span>
+          </div>
+          <p ng-show="characters.length === 0 ">
+            <i>* no results found</i>
+          </p>
+        </form>
+
+        <div ng-if="characters.alternatives.length" class="more-results-block">
+          <p >
+            //more results
+            <hr/>
+          </p>
+          <div>
+            <p ng-repeat="alt in characters.alternatives">
+            	<a style="cursor: pointer" class="h5" ng-click="characters.main = alt">
+                {{alt.name}}
+            	</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-1"></div>
+      <div character-preview character="characters.main">
+      </div>
+    </div>
+  </div>
+</div>
