@@ -1,0 +1,22 @@
+<div class="jumbotron text-left">
+	<h2>Facts</h2>
+
+	<form>
+		<div class="form-group">
+			<input type="text" class="form-control" ng-model="number">
+		</div>
+
+		<div class="checkbox">
+			<label>
+				<input type="checkbox" ng-model="save"> Save Fact
+			</label>
+
+		<div class="form-group">
+			<div>
+				<button type="button" class="btn btn-primary" ng-click="getMathFact()">Math Fact</button>
+			</div>
+		</div>
+	</form>
+
+	<pre ng-if="fact"> {{fact}} </pre>
+</div>
