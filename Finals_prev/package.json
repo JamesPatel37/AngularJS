@@ -1,0 +1,18 @@
+{
+  "name": "ex1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fileReader.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ascii-chart": "^1.1.0",
+    "async": "^0.9.0",
+    "barchart": "^0.6.1",
+    "q": "^1.2.0",
+    "yargs": "^3.5.4"
+  }
+}
