@@ -1,0 +1,33 @@
+<div ng-if="show" class ="jumbotron text-left" >
+  <div>
+
+    <p>
+
+      <table>
+        <tr>
+          <td>
+            <img src='{{show.show.image.medium}}'>
+          </td>
+          <td>
+            <table>
+              <tr>
+                <td>
+                  <div ng-bind-html = 'show.show.summary'><h4></h4></div>
+                </td>
+              </tr>
+              <tr>
+                <h2>{{show.show.name}}</h2>
+              </tr>
+              <tr>
+                <l ng-repeat="genre in show.show.genres"> {{genre}} | </l>
+              </tr>
+            </table>
+            <a href="/show/{{show.show.id}}" class="btn btn-md btn-warning pull-right"> Details </a>
+          </td>
+        </tr>
+      </table>
+
+    </p>
+
+  </div>
+</div>

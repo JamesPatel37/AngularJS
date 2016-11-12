@@ -1,0 +1,19 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-4">
+			<h2>{{show.name}}</h2><br>
+			<l ng-repeat="genre in show.genres"> {{genre}} | </l>
+			<p><img src='{{show.image.medium}}'> </p>
+		</div>
+		<div class="col-md-7">
+			<h3>Summary</h3>
+			<hr/>
+			<p ng-bind-html='show.summary | trustHTML'></p>
+			<h3>Cast</h3>
+			<hr/>
+			<p ng-repeat="character in show._embedded.cast" class="bg-success">
+				<img src = "{{character.character.image.medium || character.person.image.medium || '/images/image.jpg'}}" height='80' width='60'> {{character.person.name}} ... {{character.character.name}}
+			</p>
+		</div>
+	</div>
+</div>
